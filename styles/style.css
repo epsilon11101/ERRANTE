@@ -71,18 +71,18 @@ color: tomato;
 .banner .circle{
     position: absolute;
     background-color: white;
-    width: 5%;
-    height: 12%;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
-    top: 85%;
-    left: 45%;
+    top: 90%;
+    left: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .circle  .fa-solid{
-    margin: auto;
+    margin-top: 5px;
     color: black;
     text-align: center;
     font-size: 30px;
