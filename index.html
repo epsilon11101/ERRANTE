@@ -16,11 +16,21 @@
         .banner {
             background: black url(./images/bg.jpg) center / cover;
         }
+
+        .circle {
+            background-color: transparent;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            position: absolute;
+            top: 96%;
+            left: 45%;
+        }
     </style>
 </head>
 
 <body>
-    <header class="hero  is-primary">
+    <header class="hero  is-danger">
 
         <nav class=" hero-head columns is-marginless heading is-vcentered">
             <div class="column left">
@@ -64,7 +74,7 @@
             </div>
         </nav>
 
-        <nav class=" hero-head is-marginless columns">
+        <nav class=" hero-head is-marginless columns is-hidden">
             <div class="column space">
                 <p class="navbar-item">Planes</p>
                 <p class="navbar-item">Habitaciones</p>
@@ -84,9 +94,12 @@
     </header>
     <main>
         <section class="hero is-fullheight is-fullwidth is-black banner">
-            <div class="hero-head">
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aut?</p>
+            <div class="hero-body center">
+                <div class="circle icon">
+                    <i class="fa-solid fa-angle-down fa-3x"></i>
+                </div>
             </div>
+
         </section>
 
 
