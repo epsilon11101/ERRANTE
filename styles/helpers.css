@@ -1,0 +1,46 @@
+.center,
+.center-column,
+.top,
+.right,
+.bottom,
+.left,
+.space{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-column {
+    flex-direction: column;
+}
+
+.top {
+    align-items: flex-start;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.bottom {
+    align-items: flex-end;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.space{
+    justify-content: space-around;
+}
+
+.single-spaced,
+.single-spaced * {
+    line-height: 1;
+}
+
+@media (max-width: 1024px) {
+    .desktop {
+        display: none;
+    }
+}

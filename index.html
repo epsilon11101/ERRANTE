@@ -1,86 +1,97 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <title>ERRANTE</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Errante</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
     <script src="https://kit.fontawesome.com/4050c71461.js" crossorigin="anonymous"></script>
+    <!-- <link rel="stylesheet" href="styles/debug.css"> -->
+    <link rel="stylesheet" href="styles/helpers.css">
+
+    <style>
+        .banner {
+            background: black url(./images/bg.jpg) center / cover;
+        }
+    </style>
 </head>
 
 <body>
-    <header">
-        <nav>
-            <div>
-                <a href="">Logo</a>
+    <header class="hero  is-primary">
+
+        <nav class=" hero-head columns is-marginless heading is-vcentered">
+            <div class="column left">
+                <figure class="navbar-item">
+                    <img src="./images/logo.png" alt="" width="200px">
+                </figure>
             </div>
+            <div class="column right is-6 ">
 
-            <div>
-                <i class=" fa-solid fa-bell-concierge"></i>
-                <i class="fa-solid fa-angle-down"></i>
-            </div>
-
-            <div>
-                <a href=""><i class="fa-solid fa-user"></i></a>
-            </div>
-
-            <div class="languages">
-                <span id="en">EN</span>
-                <span id="es">ES</span>
-            </div>
-
-            <div>
-                <a href=""><i class="fa-solid fa-bars"></i></a>
-            </div>
-        </nav>
-        <nav class="menu">
-            <ul>
-                <li><a href="">Planes</a></li>
-                <li><a href="">Habitaciones</a></li>
-                <li><a href="">El pueblo</a></li>
-                <li><a href="">Restaurante</a></li>
-                <li><a href="">Contactenos</a></li>
-                <li>
-                    <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-                    <a href=""><i class="fa-brands fa-tiktok"></i></a>
-                    <a href=""><i class="fa-brands fa-instagram"></i></a>
-                    <a href=""><i class="fa-brands fa-youtube"></i></a>
-                </li>
-            </ul>
-        </nav>
-        </header>
-
-        <main>
-
-            <section class="banner">
-                <img src="./images/bg.jpg" alt="background image" class="img-fluid">
-                <div class="circle">
-                    <span><i class="fa-solid fa-angle-down"></i></span>
+                <div class="navbar-item">
+                    <span class="icon-text">
+                        <span class="icon">
+                            <i class="fa-solid fa-2x fa-bell-concierge"></i>
+                        </span>
+                        <span class="subtitle is-6 pt-1 pl-2">Reservar</span>
+                    </span>
                 </div>
-            </section>
 
-        </main>
-        <footer>
+                <div class="navbar-item ">
+                    <span class="icon-text ">
+                        <span class="icon">
+                            <i class="fa-solid fa-2x fa-user"></i>
+                        </span>
+                        <span class="subtitle is-6 pt-1 pl-2">Ingresar</span>
+                    </span>
+                </div>
 
-        </footer>
 
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-        </script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-        </script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-        </script>
+                <div class="navbar-item ">
+                    <div class="text subtitle is-6 pt-1">
+                        <span id="en">EN</span>
+                        <span id="es">ES</span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="column right ">
+                <span class="icon is-medium">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </span>
+            </div>
+        </nav>
+
+        <nav class=" hero-head is-marginless columns">
+            <div class="column space">
+                <p class="navbar-item">Planes</p>
+                <p class="navbar-item">Habitaciones</p>
+                <p class="navbar-item">El pueblo</p>
+                <p class="navbar-item">Restaurante</p>
+                <p class="navbar-item">Contactenos</p>
+            </div>
+            <div class="column is-1  space">
+                <div class="icon"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="icon"><a href=""><i class="fa-brands fa-tiktok"></i></a></div>
+                <div class="icon"><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div class="icon"><a href=""><i class="fa-brands fa-youtube"></i></a></div>
+
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero is-fullheight is-fullwidth is-black banner">
+            <div class="hero-head">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet, aut?</p>
+            </div>
+        </section>
+
+
+    </main>
+
 </body>
 
 </html>
