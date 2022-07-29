@@ -11,6 +11,7 @@
     <script src="https://kit.fontawesome.com/4050c71461.js" crossorigin="anonymous"></script>
     <!-- <link rel="stylesheet" href="styles/debug.css"> -->
     <link rel="stylesheet" href="styles/helpers.css">
+    <link rel="stylesheet" href="styles/grid.css">
 
     <style>
         .banner {
@@ -27,6 +28,7 @@
             left: 45%;
         }
     </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
 <body>
@@ -102,9 +104,70 @@
 
         </section>
 
+        <section class="section is-danger center">
+            <div id="grid" style="width: 80%;">
+                <div id="a" class="center-column">
+                    <h1 class="title is-1 mb-6 has-text-black-bis" id="welcome_text"> WELCOME </h1>
+                    <p class="subtitle is-6 has-text-grey" id="welcome_text_sub">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat omnis eum, aut recusandae
+                        ipsam
+                        optio ab doloremque explicabo repellat nisi placeat facilis quas voluptates delectus enim
+                        incidunt
+                        ipsa modi quae.
+                    </p>
+                </div>
+                <div id="b" class="grid-element">
+                    <figure class="image">
+                        <img src="./images/luna-de-miel.png" alt="" class="my_image">
+                        <div class="image_overlay center-column">
+                            <div class="image_title title  is-1 has-text-white">
+                                <p description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat omnis eum, aut recusandae
+                        ipsam">Ex1</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div id="c" class="grid-element">
+                    <figure class="image">
+                        <img src="./images/plan-aventura.png" alt="" class="my_image">
+                        <div class="image_overlay center-column">
+                            <div class="image_title title  is-1 has-text-white">
+                                <p description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat omnis eum, aut recusandae
+                        ipsam">Ex2</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div id="d" class="grid-element">
+                    <figure class="image">
+                        <img src="./images/plan-romantico.png" alt="" class="my_image">
+                        <div class="image_overlay center-column">
+                            <div class="image_title title  is-1 has-text-white">
+                                <p description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat omnis eum, aut recusandae
+                        ipsam">Ex3</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div id="e" class="grid-element">
+                    <figure class="image">
+                        <img src="./images/plan-spa.png" alt="" class="my_image">
+                        <div class="image_overlay center-column">
+                            <div class="image_title title  is-1 has-text-white">
+                                <p description="Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat omnis eum, aut recusandae
+                        ipsam">Ex4</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
 
     </main>
 
 </body>
+
+<script src="./scripts/main.js"></script>
 
 </html>
