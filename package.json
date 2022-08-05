@@ -1,0 +1,26 @@
+{
+  "name": "errante",
+  "version": "1.0.0",
+  "description": "Errante Web Page",
+  "main": "index.js",
+  "scripts": {
+     "start": "web-dev-server --node-resolve --open --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/epsilon11101/ERRANTE.git"
+  },
+  "author": "Aaron MV",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/epsilon11101/ERRANTE/issues"
+  },
+  "homepage": "https://github.com/epsilon11101/ERRANTE#readme",
+  "dependencies": {
+    "bootstrap": "^5.2.0",
+    "sass": "^1.54.3"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.32"
+  }
+}

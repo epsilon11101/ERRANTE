@@ -14,3 +14,17 @@ a:active {
 }
 
 
+.banner {
+    background:repeat-x black url(../images/bg.jpg) center / cover;
+    height: 85vh;
+    }
+
+.circle {
+    background-color: transparent;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+        }
