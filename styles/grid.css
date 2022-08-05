@@ -1,54 +1,87 @@
 
-#a {
-    grid-column: 1/6;
-}
-#grid figure {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
+
+
+.grid-container{
+    width: 80%;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "text text text img1 img1 img1"
+    "img2 img2 img3 img3 img4 img4";
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
 }
 
-#grid my_image{
-    display: block;
-    width: 100%;
+.grid-container div:nth-child(1){
+    grid-area: text;
+    text-align: center;
+
+}
+.grid-container div:nth-child(2){
+    grid-area: img1;
+}
+.grid-container div:nth-child(3){
+    grid-area: img2;
+
+}
+.grid-container div:nth-child(4) {
+    grid-area: img3;
+}
+.grid-container div:nth-child(5) {
+    grid-area: img4;
 }
 
-#grid .image_overlay{
+.grid-container .image_overlay {
     position: absolute;
-    top:0%;
+    top: 0%;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: center;
     transition: all 0.5s;
-}
-
-
-#b {
-    grid-column: 6/10;
-}
-
-#c {
-    grid-column: 1/4;
-}
-
-#d {
-    grid-column: 4/7;
-}
-
-#e {
-    grid-column: 7/10;
 } 
-
-#grid {
-    display: grid;
-
-    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows:  100% 100%;
-    justify-content:flex-start;
-
+.card-container{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card-container figure{
+    max-width: 350px;
+    color: black;
+    cursor: pointer;
+    box-shadow: 12px 11px 22px 0px rgba(0, 0, 0, 0.74);
+    -webkit-box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.77);
+    box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.77);
+    transition: all 0.5s;
 }
 
-
+.card-container figure:hover{
+    transform: scale(0.9,0.9);
+}
+.card-container figure img{
+    object-fit: cover;
+    transition: all 0.5s;
+}
+.card-container figure img:hover {
+    filter: blur(3px);
+}
+.card-container figcaption{
+    width: 100%;
+}
+.card-container figcaption div{
+    height: 60px;
+}
+.card-container figcaption div:nth-child(1){
+    background-color: black;
+    color: white;
+}
+.card-container figcaption div:nth-child(2) {
+    background-color: rgb(255, 253, 125);
+}
+.card-container figcaption div:nth-child(3) {
+    background-color: white;
+}
