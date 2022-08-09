@@ -148,3 +148,38 @@
     height: auto;
     object-fit: cover;
 }
+
+
+#restaurant{
+    margin-bottom: 300px;
+    height: 70vh;
+    background: white url('../images/shrimp.jpg') no-repeat fixed center/cover;
+    position: relative;
+}
+
+#restaurant .menu{
+    background-color: rgb(230, 131, 17);
+    color: white;
+    width: 30%;
+    height: 110%;
+    position: absolute;
+    top:-5%;
+    left: 65%;
+    text-align: center;
+}
+#restaurant .platillos{
+    background-color: rgba(0, 0, 0, 0.49);
+    color: white;
+    width: 60%;
+    height: 80%;
+    position: absolute;
+    top:10%;
+    left: 5%;
+    text-align: center;
+}
+#restaurant .row div img{
+ width: 100px;
+ height: 100px;
+ object-fit: cover;
+ border-radius: 50px;
+}
