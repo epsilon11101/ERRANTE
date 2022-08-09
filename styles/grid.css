@@ -1,5 +1,6 @@
 
 .grid-container{
+
     width: 80%;
     gap: 1%;
     display: grid;
@@ -11,26 +12,55 @@
     align-content: center;
     align-items: center;
     justify-content: center;
-
+    
+}
+.grid-container .grid-item,
+.carousel-grid-container div {
+    position: relative;
+}
+.grid-item .grid-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
-.grid-container div:nth-child(1){
+.grid-item .grid-img img,
+.carousel-grid-container div img{  
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.grid-container .grid-item:nth-child(1){
     grid-area: text;
     text-align: center;
+   
+}
 
-}
-.grid-container div:nth-child(2){
+.grid-container .grid-item:nth-child(2){
     grid-area: img1;
+    height: 350px;
 }
-.grid-container div:nth-child(3){
+
+.grid-container .grid-item:nth-child(3){
     grid-area: img2;
 
 }
-.grid-container div:nth-child(4) {
+
+.grid-container .grid-item:nth-child(4) {
     grid-area: img3;
+     
 }
-.grid-container div:nth-child(5) {
+
+.grid-container .grid-item:nth-child(5) {
     grid-area: img4;
+   
+}
+
+.grid-container .grid-secrow{
+        height: 400px;
+        width: 500px;
 }
 
 .grid-container .image_overlay {
@@ -38,11 +68,14 @@
     top: 0%;
     width: 100%;
     height: 100%;
+    object-fit: cover;
     background-color: rgba(0, 0, 0, 0.6);
     color: #fff;
     text-align: center;
     transition: all 0.5s;
 } 
+
+
 .card-container{
     flex-wrap: wrap;
     gap: 20px;
@@ -60,8 +93,9 @@
 .card-container figure:hover{
     transform: scale(0.9,0.9);
 }
+
 .card-container figure img{
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.5s;
 }
 .card-container figure img:hover {
@@ -84,3 +118,33 @@
     background-color: white;
 }
 
+
+.carousel-grid-container{
+
+    width: 100%;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img img2 img2 img2"
+    "text img2 img2 img2";
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.carousel-grid-container .grid-container-item:nth-child(1){
+    grid-area: img;
+    object-fit: cover;
+}
+.carousel-grid-container .grid-container-item:nth-child(2){
+    grid-area: text;
+    text-align: center;
+}
+.carousel-grid-container .grid-container-item:nth-child(3){
+    grid-area: img2;
+    height: auto;
+    object-fit: cover;
+}
