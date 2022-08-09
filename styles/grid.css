@@ -1,6 +1,6 @@
 
 .grid-container{
-    margin-top: 1%;
+
     width: 80%;
     gap: 1%;
     display: grid;
@@ -91,8 +91,9 @@
 .card-container figure:hover{
     transform: scale(0.9,0.9);
 }
+
 .card-container figure img{
-    object-fit: cover;
+    object-fit: contain;
     transition: all 0.5s;
 }
 .card-container figure img:hover {
