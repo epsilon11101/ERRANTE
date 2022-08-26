@@ -98,19 +98,50 @@
 
 #errante-description .errante-full-description-body {
     line-height: 1.8;
-    overflow-y: scroll;
-    max-height: 150px;
 }
 
 #errante-description .errante-full-description-plans{
     width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
 }
-#errante-description .errante-full-description-plans .errante-full-description-plan .row div[class^='col']{
-
+#errante-description .errante-full-description-plans  .row {
+    width: 100%;
+    gap: 30px;
+}
+#errante-description .errante-full-description-plans  .row div[class^='col']{
     border: 1px solid rgba(0, 0, 0, 0.382);
     border-radius: 4px;
     margin-right: 1px;
+    width: 350px;
 }
 
 
+#errante-description .errante-full-description-footer{
+    width: 100%;
+    gap: 50px;
+    text-align: center;
+    gap: 30px;
+}
+#errante-description .errante-full-description-footer form div[class='center']{
+    width: 700px;
+}
 
+#errante-description .errante-full-description-footer form button{
+    background-color: black;
+    color: white;
+    padding: auto 40px;
+    border-radius: 5px;
+    width: 20%;
+
+}
+
+#errante-description .errante-full-description-footer form .form-checkin-input{
+gap: 10px;    
+}
+
+
+#errante-description .card-container figure{
+    background-color: red;
+}
