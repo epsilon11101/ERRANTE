@@ -63,10 +63,6 @@
 
 /* DESCRIPCION DE ERRANTES */
 
-#errante-description {
-    max-height: 300px;
-}
-
 #errante-description #carouselErrante .carousel-item img{
    position: relative;
     width: 100%;
