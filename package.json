@@ -17,12 +17,7 @@
   },
   "homepage": "https://github.com/epsilon11101/ERRANTE#readme",
   "dependencies": {
-    "@fullcalendar/core": "^5.11.3",
-    "@fullcalendar/daygrid": "^5.11.3",
-    "@fullcalendar/list": "^5.11.3",
-    "@fullcalendar/timegrid": "^5.11.3",
     "bootstrap": "^5.2.0",
-    "fullcalendar": "^5.11.3",
     "moment": "^2.29.4",
     "sass": "^1.54.3"
   },
