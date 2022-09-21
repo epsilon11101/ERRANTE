@@ -118,10 +118,94 @@
         <section class="container  mt-5">
             <div class="row calendar-section">
                 <div class="col-8 calendar-section-calendar">
+                    <div class="space description-calendar mb-3">
+                        <p class="h1">!Esta disponible!</p>
+                        <ul>
+                            <li><span><i class="fa-solid fa-square"></i></span>No Disponible</li>
+                            <li><span><i class="fa-regular fa-square"></i></span>Disponible</li>
+                            <li><span><i class="fa-solid fa-square"></i></span>Tu reserva</li>
+                        </ul>
+                    </div>
                     <div id="calendar"></div>
+                    <div class="disponibilidad center-column mt-5">
+                        <p class="h4 m-3">Puede modificar la fecha de acuerdo a los días disponibles:</p>
+                        <form action="" name="form-checkin-validator" class="">
+                            <div class="left form-container">
+                                <div class="left">
+                                    <label class="center">
+                                        <p class="mt-3">Entrada:</p>
+                                        <span><i class="fa-solid fa-calendar-days"></i></span>
+                                        <input type="date" name="checkin" id="checkin">
+                                    </label>
+
+                                    <label class="center">
+                                        <p class="mt-3">Salida:</p>
+                                        <span><i class="fa-solid fa-calendar-days"></i></span>
+                                        <input type="date" name="checkin" id="checkin">
+                                    </label>
+                                </div>
+
+                                <button type="submit">Disponibilidad</button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
 
                 <div class="col-4 calendar-section-details">
+                    <div class="left-column">
+                        <p class="h2">Código de Reserva</p>
+                        <p class="h1" id="res_code"> K2DRESF34</p>
+                    </div>
+                    <div class="left-column">
+                        <div class="left-column">
+                            <label for="" class="mb-2">Ingreso: </label>
+                            <input type="date" class="form-control" value="2019-03-13" readonly="" disabled>
+                        </div>
+
+                        <div class="left-column mt-3">
+                            <label for="" class="mb-2">Salida: </label>
+                            <input type="date" class="form-control" value="2019-03-13" readonly="" disabled>
+                        </div>
+                    </div>
+                    <div class="left-column mt-3 errante-card">
+                        <label for="" class="mb-2"><span><i class="fa-sharp fa-solid fa-truck-monster"></i> Errante:
+                            </span></label>
+                        <div class="left-column img-card">
+                            <input type="text" class="form-control" value="ERRANTE BRONCO" readonly="" disabled
+                                style="text-align:center;">
+                            <img src="./images/bronco.jpg" alt="bronco">
+                        </div>
+                    </div>
+
+                    <div class="left-column mt-5">
+                        <label for="" class="mb-2">Plan: </label>
+                        <select class="form-control">
+                            <option value="continental">Plan Errante</option>
+                            <option value="continental">Plan Bronco</option>
+                            <option value="continental">Plan Jeep</option>
+                        </select>
+
+                        <label class="mt-3 mb-2">Personas: </label>
+                        <select class="form-control">
+
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+
+                        </select>
+                    </div>
+
+                    <div class="row mt-5 center pay-plan">
+                        <div class="col-6 center">
+                            <p class="h1">$300 USD</p>
+                        </div>
+
+                        <div class="col-6 center">
+                            <a href="" class="h4">PAGAR RESERVA</a>
+                        </div>
+
+                    </div>
 
                 </div>
 
