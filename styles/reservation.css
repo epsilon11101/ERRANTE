@@ -1,0 +1,42 @@
+.banner-reservation{
+    background:repeat-x white url(../images/jungle.jpg) center / cover;
+    height: 40vh;
+    position: relative;
+    z-index: 0;
+    color: white;
+    font-weight: bolder;
+}
+
+.banner-reservation::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position:absolute ;
+    background-color: rgba(0, 0, 0, 0.22);
+    z-index: -1;
+}
+
+.banner-reservation .banner-reservation-nav-container{
+    min-width: 100%;
+    height: 100%;
+}
+
+.banner-reservation .banner-reservation-nav-container ul {
+    width: 100%;
+    gap:50%;
+}
+
+
+.calendar-section .calendar-section-calendar #calendar button.fc-prev-button.btn.btn-primary,
+.calendar-section .calendar-section-calendar #calendar button.fc-next-button.btn.btn-primary{
+    background-color: black ;
+    color: white;
+    border: none;
+}
+
+.calendar-section .calendar-section-calendar #calendar .fc-day-today {
+    background: rgba(152, 251, 152, 0.431) ;
+  
+} 
