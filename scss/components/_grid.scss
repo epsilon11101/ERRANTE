@@ -1,0 +1,229 @@
+.grid-container{
+    gap: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "text text text img1 img1 img1"
+    "img2 img2 img3 img3 img4 img4";
+
+    & .grid-item{
+        position: relative;
+
+        & .grid-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            & img{
+                height: 100%;
+                width: 100%;
+                object-fit: cover;            
+            }
+        }
+        &:nth-child(1){
+            grid-area: text;
+            text-align: center;
+        }
+        &:nth-child(2){
+            grid-area: img1;
+            height: 350px;
+        }
+        &:nth-child(3){
+            grid-area: img2;
+        }
+        &:nth-child(4) {
+            grid-area: img3; 
+        }
+        &:nth-child(5) {
+            grid-area: img4;
+        }
+
+    }
+
+    & .carousel-grid-container{
+        & div{
+            position: relative;
+            & img{  
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    & .grid-secrow{
+        height: 300px;
+        width: 400px;
+    }
+
+    & .image_overlay {
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: #fff;
+        text-align: center;
+        transition: all 0.5s;
+    } 
+
+}
+
+.card-container{
+    flex-wrap: wrap;
+    gap: 20px;
+    & figure{
+        max-width: 350px;
+        color: black;
+        cursor: pointer;
+        box-shadow: 12px 11px 22px 0px rgba(0, 0, 0, 0.74);
+        -webkit-box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.77);
+        box-shadow: 4px 3px 8px 1px rgba(0, 0, 0, 0.77);
+        transition: all 0.5s;
+
+        &:hover{
+            transform: scale(0.9,0.9);
+        }
+        & img{
+            object-fit: contain;
+            transition: all 0.5s;
+            &:hover {
+                filter: blur(3px);
+            }
+        }
+
+    }
+    & figcaption{
+        width: 100%;
+        & div{
+            height: 60px;
+            &:nth-child(1){
+                background-color: black;
+                color: white;
+            }
+            &:nth-child(2) {
+                background-color: rgb(255, 253, 125);
+            }
+            &:nth-child(3) {
+                background-color: white;
+            }
+        }
+    }
+}
+
+.carousel-grid-container{
+
+    width: 100%;
+    gap: 1%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img img2 img2 img2"
+    "text img2 img2 img2";
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .grid-container-item{
+        &:nth-child(1){
+            grid-area: img;
+            object-fit: cover;
+        }
+        &:nth-child(2){
+            grid-area: text;
+            text-align: center;
+        }
+        &:nth-child(3){
+            grid-area: img2;
+            height: auto;
+            object-fit: cover;
+        }
+
+    }
+
+}
+
+#restaurant{
+    height: 70vh;
+    background: white url('../images/shrimp.jpg') no-repeat fixed center/cover;
+    position: relative;
+    & .menu{
+        background-color: rgb(230, 131, 17);
+        color: white;
+        width: 30%;
+        height: 110%;
+        position: absolute;
+        top:-5%;
+        left: 65%;
+        text-align: center;
+    }
+    & .platillos{
+        background-color: rgba(0, 0, 0, 0.49);
+        color: white;
+        width: 60%;
+        height: 80%;
+        position: absolute;
+        top:10%;
+        left: 5%;
+        text-align: center;
+    }
+    & .row div img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+    & form{
+        & > div{
+            flex-wrap: wrap;
+            gap: 20px;
+            & > div{
+                flex-grow: 4;
+            }
+        }
+    }
+
+}
+
+.my-ratio{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    & iframe{
+        width:100%;
+        height:100%;
+        border:0;   
+    }
+}
+
+.visitus-card{
+    position: absolute;
+    top:10%;
+    left: 60%;
+    width: 30%;
+    height: 70%;
+    border-radius: 5%;
+    background-color: rgb(162, 167, 11);
+    color: rgb(91, 89, 89);
+    box-shadow: 8px 10px 18px -6px rgba(0,0,0,0.79);
+    -webkit-box-shadow: 8px 10px 18px -6px rgba(0,0,0,0.79);
+    -moz-box-shadow: 8px 10px 18px -6px rgba(0,0,0,0.79);
+
+    & > div{
+    margin: 5px;
+    text-align: left;
+    width: 100%;
+        & p{
+        margin-top: 10px;
+        padding-left: 10px;
+        }
+    }
+}
+
+footer *{
+ color: white;
+ justify-content: center;
+ align-items: center;
+}

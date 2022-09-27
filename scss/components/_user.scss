@@ -1,0 +1,110 @@
+.banner-reservation{
+    background:repeat-x white url(../images/jungle.jpg) center / cover;
+    height: 30vh;
+}
+
+.user-container {
+    & .user-status{
+      & img{
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: solid 10px black;       
+      }  
+    
+      & #accordionUser{
+        & button{
+            background-color: rgb(129, 125, 125) ;
+            color: white;
+            min-width: 250px;
+        }
+        & ul{
+            width: 100%;
+            & li{
+                width: 100%;
+                height: 80px;
+                border: 1px dashed rgba(0, 0, 0, 0.075);
+                & .btn{
+                    width: 10px !important;
+                    height: 100%;
+                    border:1px solid black;
+                }
+            }
+        }
+      }
+    }
+}
+
+.accordion-button{
+    &:not(.collapsed)::after {
+        content: "\f0d7";
+        font: var(--fa-font-solid);
+        color: black;
+        background-image: none;
+        }
+    &.collapsed::after {
+        font: var(--fa-font-solid);
+        content: "\f63b";
+        color: white;
+        background-image: none;
+    }
+}
+
+.user-res{
+    & .menu{
+        min-width: 100%;
+        gap: 60%;    
+    }
+    & .user-res-list{
+        min-width: 100%;
+        max-height: 75%;
+        overflow: auto;
+        & table{
+            width: 100%; 
+            & thead{
+                background-color: gold;
+                height: 100px;     
+                & tr{
+                    & th{
+                         padding-top: 40px;
+                    }
+                    &:nth-child(1){
+                        width: 10%;
+                        padding-left: 30px;  
+                    }
+                }          
+            }
+            & tbody{
+                width: 100%;
+                & tr{
+                    height: 100px;
+                    width: 100%;
+                    background-color: rgba(218, 165, 32, 0.544);
+                    & td{
+                        & button{
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 50%;
+                            border: none;
+                            margin-right: 10px;
+                            color: white;
+                            &:nth-child(1){
+                                background-color: rgb(0, 0, 0);
+                            }
+                            &:nth-child(2){
+                                background-color: gold;
+                            }
+                        }
+                        &:nth-child(1){
+                            padding-left: 30px;
+                        }
+                    }
+                    &:nth-of-type(2n){
+                        background-color: white !important;
+                    }
+                }
+            }
+        }
+    }
+}
