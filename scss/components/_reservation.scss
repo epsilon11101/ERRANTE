@@ -98,12 +98,14 @@
         background-color: gold;
         & .form-container{
             gap: 10px;
+
+            & div.left{
+                max-width: 70%;
+                gap: 50px;
+                padding-left: 10px;
+            }
         }
-        & div.left{
-            max-width: 70%;
-            gap: 50px;
-            padding-left: 10px;
-        }
+
         & label{
             gap: 10px;
             max-width: 222px;       
