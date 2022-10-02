@@ -75,7 +75,7 @@
             transform: scale(0.9,0.9);
         }
         & img{
-            object-fit: contain;
+            object-fit: cover;
             transition: all 0.5s;
             &:hover {
                 filter: blur(3px);
@@ -85,8 +85,14 @@
     }
     & figcaption{
         width: 100%;
+        background-color: red;
         & div{
-            height: 60px;
+            height: 50px;
+            min-width: 100%;
+            & p{
+                padding: 0;
+                margin: 0;
+            }
             &:nth-child(1){
                 background-color: black;
                 color: white;
@@ -144,10 +150,10 @@
 
 #restaurant{
     height: 70vh;
-    background: white url('../images/shrimp.jpg') no-repeat fixed center/cover;
+    background: white url('../../images/textura_verde.svg') no-repeat fixed center/cover;
     position: relative;
     & .menu{
-        background-color: rgb(230, 131, 17);
+        background: white url('../../images/PAPEL.jpg') no-repeat  center/cover;
         color: white;
         width: 30%;
         height: 110%;
@@ -174,7 +180,8 @@
     }
 }
 
-form{
+form.form-contact{
+    font-family:$text_bold;
     & > div{
             flex-wrap: wrap;
             gap: 20px;

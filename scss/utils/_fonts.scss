@@ -1,0 +1,58 @@
+@import url('../../fonts/Catalish\ Huntera.css');
+@import url('../../fonts/Indiana\ Jonas.css');
+@import url('../../fonts/Poppins.css');
+@import url('../../fonts/Poppins\ ExtraLight.css');
+@import url('../../fonts/Poppins\ Thin.css');
+
+$title : 'Indiana Jonas';
+$subtitle: 'Catalish Huntera';
+$text_bold : 'Poppins';
+$text_extraLight : 'Poppins ExtraLight';
+$text_thin : 'Poppins Thin';
+
+
+.title{
+    font-family: $title;
+    
+}
+
+.subtitle{
+    font-family: $subtitle ;
+}
+
+.p_bold{
+    font-family: $text_bold;
+
+}
+
+.p_light{
+    font-family: $text_extraLight;
+
+}
+
+.p_thin{
+    font-family: $text_thin;
+
+}
+
+.h1{
+    font-size: 8rem;
+}
+
+.h2{
+    font-size: 5rem;
+}
+
+.h3{
+    font-size: 3rem;
+}
+
+.h4{
+    font-size: 2rem;
+}
+.h5{
+    font-size: 1rem;
+}
+.h6{
+    font-size: 0.8rem;
+}
