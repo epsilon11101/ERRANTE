@@ -1,8 +1,9 @@
 // BANNER
 
 .banner-errantes{
-    background:repeat-x white url(../images/jungle.jpg) center / cover;
-    height: 40vh;
+    background:repeat-x white url('../../images/marcas.svg') center / cover;
+    height: 43vh;
+    width: 100%;
     position: relative;
     z-index: 0;
     
@@ -13,7 +14,7 @@
         top: 0;
         left: 0;
         position:absolute ;
-        background-color: rgba(0, 0, 0, 0.22);
+        background-color: rgba(0, 0, 0, 0);
         z-index: -1;
     }
 
@@ -24,7 +25,7 @@
         
         & .banner-title{
             width: 80%;
-            color: white;
+            color: rgb(255, 255, 255);
             font-size: 30px;
             gap:273px;
 
@@ -32,7 +33,7 @@
                 cursor: pointer;
             }
             & .banner-title-selection{
-                background-color: rgba(255, 255, 255, 0.378);
+                background-color: rgba(255, 168, 5, 0.459);
                 padding: 4px 30px;
                 border-radius: 4px;
                 cursor: none;
@@ -40,21 +41,21 @@
         }
 
         & .banner-nav{
-            color: white;
+            color: rgb(255, 255, 255);
             font-weight: 900;
             position: absolute;
             width: 100%;
             top: 85%;
 
             & .banner-nav-item{
-                background-color: rgba(255, 255, 255, 0.232);
+                background-color: rgba(255, 168, 5, 0.349);
                 border-radius: 4px;
                 padding: 2px 20px;
                 cursor: pointer;
 
                 &:hover{
-                    background-color: white;
-                    color: black;
+                    background-color: rgb(251, 255, 0);
+                    color: rgb(255, 168, 5);
                     box-shadow: 10px 11px 12px -9px rgba(0,0,0,0.75);
                     -webkit-box-shadow: 10px 11px 12px -9px rgba(0,0,0,0.75);
                     -moz-box-shadow: 10px 11px 12px -9px rgba(0,0,0,0.75);
@@ -98,7 +99,15 @@
 
         & ul{
             gap:50px;
+            & a{
+                cursor: pointer;
+                transition: all 0.2s ease;
+                    &:hover{
+                        font-size: 20px;
+                }
+            }
         }
+        
     }
 
     & .errante-full-description-body {
@@ -131,6 +140,7 @@
         & form {
             & div[class='center']{
                 width: 700px;
+                gap: 10px;
             }
             & button{
                 background-color: black;
@@ -140,7 +150,7 @@
                 width: 20%;
             }
             & .form-checkin-input{
-                gap: 10px;    
+                gap: 20px;    
             }
 
     }
