@@ -16,53 +16,57 @@
 </head>
 
 <body>
-    <header class="container-fluid bg-danger">
+    <header class="container-fluid">
 
         <nav class=" d-flex justify-content-between align-items-center">
-            <div class="left  mt-3 mb-2">
-                <figure class="nav-item">
-                    <img src="./images/logo.png" alt="" width="200px">
-                </figure>
-            </div>
-            <div class="d-flex align-items-center justify-content-center gap-5">
-                <div>
-                    <span class="d-flex align-items-center ">
-                        <i class=" fa-solid fa-1x fa-bell-concierge pl-2"></i>
-                        <span class=" fs-5 m-2">Reservar</span>
-                    </span>
-                </div>
-                <div>
-                    <span class="d-flex align-items-center ">
-                        <i class=" fa-solid fa-1x fa-user pl-2"></i>
-                        <span class=" fs-5 m-2">Ingresar</span>
-                    </span>
-                </div>
+            <ul class="center mt-3 p_bold h5">
+                <li>
+                    <a href="">
+                        <img src="./images/logo.svg" alt="" class="header-logo">
+                    </a>
+                </li>
+                <li>
+                    <div class="center">
+                        <span class="d-flex align-items-center ">
+                            <i class=" fa-solid fa-1x fa-bell-concierge pl-2"></i>
+                            <span class=" fs-5 m-2">Reservar</span>
+                        </span>
 
-                <div>
-                    <div class="text subtitle is-6 pt-1">
-                        <span id="en">EN</span>
-                        <span id="es">ES</span>
-                        <span id="fr">FR</span>
+
+                        <span class="d-flex align-items-center ">
+                            <i class=" fa-solid fa-1x fa-user pl-2"></i>
+                            <span class=" fs-5 m-2">Ingresar</span>
+                        </span>
+
                     </div>
 
-                </div>
-            </div>
-            <div>
-                <span class="icon is-medium">
-                    <i class="fa-solid fa-bars fa-2x"></i>
-                </span>
-            </div>
+
+                <li>
+                    <div class="text pt-1 center p_bold" style="gap:10px;">
+                        <a href="#" id="en">EN</a>
+                        <a href="#" id="es">ES</a>
+                        <a href="#" id="fr">FR</a>
+                    </div>
+                </li>
+                <li>
+
+                    <span class="icon is-medium">
+                        <i class="fa-solid fa-bars fa-2x"></i>
+                    </span>
+
+                </li>
+            </ul>
         </nav>
-        <nav class="container-fluid ">
-            <div class="row">
-                <div class="col-9 space mt-3">
-                    <p class="navbar-item">Planes</p>
-                    <p class="navbar-item">Habitaciones</p>
-                    <p class="navbar-item">El pueblo</p>
-                    <p class="navbar-item">Restaurante</p>
-                    <p class="navbar-item">Contactenos</p>
+        <nav class="container-fluid pb-3 hidden-nav">
+            <div class="space">
+                <div class="center mt-3 h5">
+                    <a class="link-light ">Planes</a>
+                    <a class="link-light">Habitaciones</a>
+                    <a class="link-light">El pueblo</a>
+                    <a class="link-light">Restaurante</a>
+                    <a class="link-light">Contactenos</a>
                 </div>
-                <div class="col-3 is-1  space">
+                <div class="center mt-2">
                     <div class="row ">
                         <div class="col-1 "><a href="" class="link-light"><i class="fa-brands fa-facebook-f"></i></a>
                         </div>
@@ -88,8 +92,8 @@
                     <ul class="left banner-title">
                         <li class="mt-3 banner-title-button">
                             <div class="left-column">
-                                <p><span><i class="fa-solid fa-angle-left"></i></span> Regresar</p>
-                                <p class="h1">MI PERFIL</p>
+                                <p class="h4"><span><i class="fa-solid fa-angle-left"></i></span> Regresar</p>
+                                <p class="h2 title">MI PERFIL</p>
                             </div>
                         </li>
                         <li class="banner-title-selection">
@@ -110,7 +114,7 @@
                     <div class="accordion mt-5" id="accordionUser">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingReservation">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button title" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseReservation" aria-expanded="true"
                                     aria-controls="collapseReservation">
                                     MIS RESERVAS
@@ -129,7 +133,7 @@
                         </div>
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingUser">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed title" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseUser" aria-expanded="false" aria-controls="collapseUser">
                                     MIS DATOS
                                 </button>
@@ -157,7 +161,7 @@
                 <div class="col-8 center-column user-res">
                     <div class="center menu">
                         <p class="h4">Hola Juana María!</p>
-                        <p class="h1">Salir</p>
+                        <p class="h5">Salir</p>
                     </div>
 
                     <div class="user-res-list center">
@@ -236,8 +240,8 @@
         <!-- CONTACT SECTION  -->
 
         <section class="container center-column mt-5">
-            <h2 class="h1"> CONTACTANOS </h2>
-            <form action="">
+            <h2 class="h1 title"> CONTACTANOS </h2>
+            <form action="" class="form-contact">
                 <div class="center mb-3 items">
                     <div>
                         <label for="validateName" class="form-label">Nombre</label>
@@ -274,8 +278,6 @@
                     <button type="button" class="btn btn-dark">Enviar</button>
                 </div>
 
-
-
             </form>
         </section>
 
@@ -288,7 +290,7 @@
     <footer class="bg-danger  container-fluid  space mt-5">
 
         <div class="center bg-danger mt-3">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+            <p class="h4 title">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
         </div>
 
         <div class="center my-4">
