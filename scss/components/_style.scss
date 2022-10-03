@@ -54,7 +54,10 @@ header{
 
 footer{
     background:  white url('../../images/PAPEL.jpg')  center / cover;
-    color: rgb(83, 51, 9);
+    &  p, i{
+        color: rgb(83, 51, 9);
+    }
+    
 }
 
 .banner {
