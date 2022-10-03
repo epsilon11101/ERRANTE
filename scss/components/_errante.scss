@@ -1,8 +1,8 @@
 // BANNER
 
 .banner-errantes{
-    background:repeat-x white url('../../images/marcas.svg')fixed center / cover;
-    height: 43vh;
+    background:repeat-x white url('../../images/marcas.svg') fixed center / cover;
+    height: 35vh;
     width: 100%;
     position: relative;
     z-index: 0;
@@ -45,7 +45,7 @@
             font-weight: 900;
             position: absolute;
             width: 100%;
-            top: 85%;
+            top: 78%;
 
             & .banner-nav-item{
                 background-color: rgba(255, 168, 5, 0.349);
